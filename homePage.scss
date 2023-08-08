@@ -2,6 +2,8 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $bg-color: #e30613;
 $small-txt: 12px;
+$bg-yellow: #ffc423;
+$small-txt: 10px;
 
 body {
   font: 100% $font-stack;
@@ -39,7 +41,7 @@ body {
         }
         .search-icon {
           width: 45px;
-          background-color: #ffc423;
+          background-color: $bg-yellow;
           text-align: center;
           margin: auto;
           height: 40px;
@@ -67,11 +69,16 @@ body {
       align-items: center;
       text-align: center;
 
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+
       .all-cat {
         flex: 1;
         text-align: center;
         margin-left: 15px;
-        background-color: #ffc423;
+        background-color: $bg-yellow;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -84,14 +91,20 @@ body {
         list-style-type: none;
         flex: 8;
         padding-inline: 0;
-
-        a {
-          text-decoration: none;
-          color: #000000;
-        }
       }
       .my-cart {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 52px;
+        width: 111px;
+        margin-inline: 2rem;
+        background-color: $bg-yellow;
+        justify-content: center;
+        align-items: center;
+
+        .cart-items {
+          font-size: $small-txt;
+        }
       }
     }
     .navigation {
@@ -104,11 +117,117 @@ body {
       height: 40px;
       background-color: #e8e8e8;
       gap: 10px;
-    }
 
-    a {
-      text-decoration: none;
-      color: #757575;
+      a {
+        text-decoration: none;
+        color: #757575;
+      }
+      .gas-cooker {
+        color: #000000;
+      }
+    }
+    // .hero-banner {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+    .slider {
+      height: 350px;
+      display: flex;
+
+      .img {
+        background: url("./images/electronics.JPG") no-repeat;
+        height: 100%;
+        flex: 1.5;
+      }
+
+      .sale-info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        .electronics-txt {
+          border: 1px solid #000000;
+          transform: skew(-30deg); /* SKEW */
+          height: 40px;
+          width: 270px;
+
+          span {
+            display: block; /* block or inline-block is needed */
+            text-decoration: none;
+            padding: 5px 20px;
+            font: 30px/1 sans-serif;
+            transform: skew(20deg); /* UNSKEW */
+            color: inherit;
+          }
+        }
+        .sale-txt {
+          transform: skew(30deg); /* SKEW */
+          height: 40px;
+          width: 134px;
+          background-color: #e30613;
+          color: white;
+          text-align: center;
+
+          span {
+            display: block; /* block or inline-block is needed */
+            text-decoration: none;
+            padding: 5px 20px;
+            font: 35px/1 sans-serif;
+            transform: skew(-35deg); /* UNSKEW */
+            color: inherit;
+          }
+        }
+        .long-txt {
+          margin-top: 32px;
+          font-size: 35px;
+        }
+        .shop-now-btn {
+          background-color: #000000;
+          color: white;
+          width: 160px;
+          height: 50px;
+          margin-top: 25px;
+          border-radius: 8px;
+          border: none;
+          font-size: 20px;
+        }
+      }
+    }
+    .buttons-list {
+      display: flex;
+      justify-content: space-around;
+
+      .left-nav,
+      .right-nav {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+      gap: 10px;
+      button {
+        flex: 1;
+        height: 80px;
+        border-radius: 8px;
+        border: none;
+        font-size: 18px;
+      }
+      .panasonic {
+        background-color: #000000;
+        color: white;
+      }
+      .midea {
+        background-color: #009ada;
+        color: white;
+      }
+      .vestel {
+        background-color: #e2212a;
+        color: white;
+      }
+      .sharp {
+        background-color: #fb002e;
+        color: white;
+      }
     }
   }
 }

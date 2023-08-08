@@ -51,7 +51,7 @@ body .home .header .right-header {
   justify-content: space-around;
 }
 body .home .header .small-txt {
-  font-size: 12px;
+  font-size: 10px;
 }
 body .home .sub-header {
   display: flex;
@@ -59,6 +59,10 @@ body .home .sub-header {
   height: 40px;
   align-items: center;
   text-align: center;
+}
+body .home .sub-header a {
+  text-decoration: none;
+  color: #000000;
 }
 body .home .sub-header .all-cat {
   flex: 1;
@@ -77,12 +81,18 @@ body .home .sub-header .menubar {
   flex: 8;
   padding-inline: 0;
 }
-body .home .sub-header .menubar a {
-  text-decoration: none;
-  color: #000000;
-}
 body .home .sub-header .my-cart {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 52px;
+  width: 111px;
+  margin-inline: 2rem;
+  background-color: #ffc423;
+  justify-content: center;
+  align-items: center;
+}
+body .home .sub-header .my-cart .cart-items {
+  font-size: 10px;
 }
 body .home .navigation {
   color: #757575;
@@ -95,9 +105,105 @@ body .home .navigation {
   background-color: #e8e8e8;
   gap: 10px;
 }
-body .home a {
+body .home .navigation a {
   text-decoration: none;
   color: #757575;
+}
+body .home .navigation .gas-cooker {
+  color: #000000;
+}
+body .home .slider {
+  height: 350px;
+  display: flex;
+}
+body .home .slider .img {
+  background: url("./images/electronics.JPG") no-repeat;
+  height: 100%;
+  flex: 1.5;
+}
+body .home .slider .sale-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+body .home .slider .sale-info .electronics-txt {
+  border: 1px solid #000000;
+  transform: skew(-30deg); /* SKEW */
+  height: 40px;
+  width: 270px;
+}
+body .home .slider .sale-info .electronics-txt span {
+  display: block; /* block or inline-block is needed */
+  text-decoration: none;
+  padding: 5px 20px;
+  font: 30px/1 sans-serif;
+  transform: skew(20deg); /* UNSKEW */
+  color: inherit;
+}
+body .home .slider .sale-info .sale-txt {
+  transform: skew(30deg); /* SKEW */
+  height: 40px;
+  width: 134px;
+  background-color: #e30613;
+  color: white;
+  text-align: center;
+}
+body .home .slider .sale-info .sale-txt span {
+  display: block; /* block or inline-block is needed */
+  text-decoration: none;
+  padding: 5px 20px;
+  font: 35px/1 sans-serif;
+  transform: skew(-35deg); /* UNSKEW */
+  color: inherit;
+}
+body .home .slider .sale-info .long-txt {
+  margin-top: 32px;
+  font-size: 35px;
+}
+body .home .slider .sale-info .shop-now-btn {
+  background-color: #000000;
+  color: white;
+  width: 160px;
+  height: 50px;
+  margin-top: 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+}
+body .home .buttons-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+body .home .buttons-list .left-nav,
+body .home .buttons-list .right-nav {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+body .home .buttons-list button {
+  flex: 1;
+  height: 80px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+}
+body .home .buttons-list .panasonic {
+  background-color: #000000;
+  color: white;
+}
+body .home .buttons-list .midea {
+  background-color: #009ada;
+  color: white;
+}
+body .home .buttons-list .vestel {
+  background-color: #e2212a;
+  color: white;
+}
+body .home .buttons-list .sharp {
+  background-color: #fb002e;
+  color: white;
 }
 
 /*# sourceMappingURL=homePage.css.map */
