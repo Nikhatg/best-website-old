@@ -79,7 +79,6 @@ body .home .sub-header .menubar {
   justify-content: space-evenly;
   list-style-type: none;
   flex: 8;
-  padding-inline: 0;
 }
 body .home .sub-header .my-cart {
   display: flex;
