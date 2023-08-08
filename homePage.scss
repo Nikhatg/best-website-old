@@ -1,0 +1,114 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$bg-color: #e30613;
+$small-txt: 12px;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+
+  .home {
+    display: grid;
+    .icon {
+      margin-right: 5px;
+    }
+    .fa-angle-right {
+      margin-left: 10px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      color: white;
+      background-color: #e30613;
+      padding-inline: 15px;
+      height: 80px;
+
+      .best-logo {
+        flex: 2;
+      }
+      .search {
+        display: flex;
+        flex: 3;
+        height: 40px;
+
+        .searchbar {
+          flex: 1;
+          padding: 8px;
+          border: none;
+        }
+        .search-icon {
+          width: 45px;
+          background-color: #ffc423;
+          text-align: center;
+          margin: auto;
+          height: 40px;
+        }
+        .search-icon i {
+          text-align: center;
+          vertical-align: middle;
+          position: relative;
+          top: 25%;
+        }
+      }
+      .right-header {
+        flex: 2;
+        display: flex;
+        justify-content: space-around;
+      }
+      .small-txt {
+        font-size: $small-txt;
+      }
+    }
+    .sub-header {
+      display: flex;
+      font-size: 14px;
+      height: 40px;
+      align-items: center;
+      text-align: center;
+
+      .all-cat {
+        flex: 1;
+        text-align: center;
+        margin-left: 15px;
+        background-color: #ffc423;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .menubar {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        flex: 8;
+        padding-inline: 0;
+
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+      .my-cart {
+        flex: 1;
+      }
+    }
+    .navigation {
+      color: #757575;
+      padding-left: 15px;
+      font-size: 12px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      height: 40px;
+      background-color: #e8e8e8;
+      gap: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #757575;
+    }
+  }
+}
