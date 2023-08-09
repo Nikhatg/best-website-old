@@ -1,6 +1,7 @@
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
+  width: 100vh;
 }
 body .home {
   display: grid;
@@ -203,6 +204,47 @@ body .home .buttons-list .vestel {
 body .home .buttons-list .sharp {
   background-color: #fb002e;
   color: white;
+}
+body .home .catogries {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+}
+body .home .catogries .card {
+  display: flex;
+  flex-direction: column;
+  height: 464px;
+  width: 450px;
+  flex: 1;
+  border: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1019607843);
+}
+body .home .catogries .card .card-image {
+  object-fit: cover;
+  flex: 9;
+  border: 1px solid #e2e2e2;
+}
+body .home .catogries .card .card-title {
+  flex: 1;
+  padding: 15px 0 0 15px;
+  font-size: 24px;
+  font: 500;
+}
+body .home .catogries .card .card-subtitle {
+  flex: 1;
+  padding-left: 15px;
+  font-size: 15px;
+}
+body .home .catogries .card .card-shop-btn {
+  flex: 1;
+  width: 109px;
+  height: 46px;
+  background-color: #ffc423;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 /*# sourceMappingURL=homePage.css.map */
