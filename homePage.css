@@ -1,7 +1,6 @@
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
-  width: 100vh;
 }
 body .home {
   display: grid;
@@ -173,6 +172,7 @@ body .home .slider .sale-info .shop-now-btn {
 body .home .buttons-list {
   display: flex;
   justify-content: space-around;
+  margin-inline: 10px;
   gap: 10px;
 }
 body .home .buttons-list .left-nav,
@@ -210,12 +210,13 @@ body .home .catogries {
   display: flex;
   gap: 15px;
   justify-content: space-around;
+  margin-inline: 10px;
 }
 body .home .catogries .card {
   display: flex;
   flex-direction: column;
   height: 464px;
-  width: 450px;
+  width: 350px;
   flex: 1;
   border: none;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1019607843);
@@ -224,6 +225,10 @@ body .home .catogries .card .card-image {
   object-fit: cover;
   flex: 9;
   border: 1px solid #e2e2e2;
+}
+body .home .catogries .card .card-image img {
+  max-width: 100%;
+  max-height: 100%;
 }
 body .home .catogries .card .card-title {
   flex: 1;
